@@ -21,7 +21,7 @@ export default function App() {
     });
 
     if (!res.canceled) {
-      setSelectedImage(result.assets[0].uri);
+      setSelectedImage(res.assets[0].uri);
     } else {
       alert('You did not select any image.');
     }
